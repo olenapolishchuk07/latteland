@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LatteLand</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+
+  <!-- Slick Slider CSS (залишено на випадок, якщо потрібно) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">LatteLand</div>
+  <div class="burger">&#9776;</div>
+  <ul class="nav-links">
+    <li><a href="#hero">Головна</a></li>
+    <li><a href="#about">Про нас</a></li>
+    <li><a href="#services">Послуги</a></li>
+    <li><a href="#contact">Контакти</a></li>
+  </ul>
+</header>
+
+<div class="overlay"></div>
+
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <h1>Ласкаво просимо до LatteLand</h1>
+    <p>Де кожна кава — маленьке мистецтво</p>
+    <a href="#contact" class="btn-primary">Зв'язатися</a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-text card">
+    <h2>Про нас</h2>
+    <p>
+      Ми — команда закоханих у комфорт, естетику та затишок людей, які прагнуть створити для вас щось більше, ніж просто продукт чи послугу. Наш простір — це місце, де кожна деталь має значення: від теплої кольорової гами до приємного аромату кави з нотками ванілі.
+    </p>
+    <p>
+      Наша історія почалася з маленької ідеї — зробити повсякденне життя теплішим і красивішим. Ми віримо, що навіть найменші речі — як усмішка, вдалий день чи ароматний напій — здатні змінити настрій на краще.
+    </p>
+    <p>
+      Усе, що ми створюємо, ми робимо з любов’ю до людей та увагою до деталей. Приєднуйтесь до нашої спільноти, і нехай кожна ваша мить буде наповнена теплом, натхненням та гармонією.
+    </p>
+  </div>
+<div class="gallery-slider">
+    <img src="images/gallery1.jpg" alt="">
+    <img src="images/gallery2.jpg" alt="">
+    <img src="images/gallery3.jpg" alt="">
+    <img src="images/gallery4.jpg" alt="">
+    <img src="images/gallery5.jpg" alt="">
+    <img src="images/gallery6.jpg" alt="">
+    <img src="images/gallery7.jpg" alt="">
+    <img src="images/gallery8.jpg" alt="">
+    <img src="images/gallery9.jpg" alt="">
+    <img src="images/gallery10.jpg" alt="">
+  </div>
+</section>
+
+<section id="services">
+  <h2>Послуги</h2>
+    <div class="service-slider">
+    <div class="service-item card">
+      <img src="images/service1.jpg" alt="">
+      <h3>Кавові події</h3>
+      <p>Облаштовуємо виїзні кавові бари на весілля, вечірки, фестивалі.</p>
+    </div>
+
+    <div class="service-item card">
+      <img src="images/service2.jpg" alt="">
+      <h3>Кавові майстер-класи</h3>
+      <p>Навчимо мистецтву еспресо, латте-арту та дегустації.</p>
+    </div>
+
+    <div class="service-item card">
+      <img src="images/service3.jpg" alt="">
+      <h3>Арт-фотозони</h3>
+      <p>Декоровані простори для ваших кавових фотосесій.</p>
+    </div>
+
+    <div class="service-item card">
+      <img src="images/service4.jpg" alt="">
+      <h3>Подарункові бокси</h3>
+      <p>Естетичні бокси з кавою, смаколиками та свічками.</p>
+    </div>
+
+    <div class="service-item card">
+      <img src="images/service5.jpg" alt="">
+      <h3>Домашні кавові набори</h3>
+      <p>Набори з кавою та аксесуарами для затишних ритуалів вдома.</p>
+    </div>
+
+    <div class="service-item card">
+      <img src="images/service6.jpg" alt="">
+      <h3>Кавовий кетеринг</h3>
+      <p>Доставка кави для офісів, зібрань та івентів.</p>
+    </div>
+
+    <div class="service-item card">
+      <img src="images/service7.jpg" alt="">
+      <h3>Індивідуальний декор</h3>
+      <p>Оренда фотозон та декору для фотосесій чи свят.</p>
+    </div>
+
+    <div class="service-item card">
+      <img src="images/service8.jpg" alt="">
+      <h3>Брендована кава</h3>
+      <p>Кава з вашим логотипом для подарунків чи промо-івентів.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact" id="contact">
+  <h2>Зв'язок з нами</h2>
+  <div class="contact-row">
+<form id="contact-form" class="card" >
+    <div class="form-group">
+      <label for="name">Ім'я:</label>
+      <input type="text" id="name" name="name" required />
+      <small class="error-message" id="name-error"></small>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <small class="error-message" id="email-error"></small>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Повідомлення:</label>
+      <textarea id="message" name="message" placeholder="Ваше повідомлення" required></textarea>
+      <small class="error-message" id="message-error"></small>
+    </div>
+
+    <button type="submit">Надіслати</button>
+    <div id="form-message" class="form-message"></div>
+</form>
+
+
+
+    <div class="contact-info card">
+      <h3>Контакти</h3>
+      <p>Email: <a href="mailto:cukerochka07@gmail.com">cukerochka07@gmail.com</a></p>
+      <p>Телефон: <a href="tel:+380123456789">+38 (012) 345-67-89</a></p>
+      <p>Соціальні мережі:</p>
+      <p><a href="https://www.instagram.com/lenchuk_07/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></p>
+      <p><a href="https://www.facebook.com/olena.polisuk.939937/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></p>
+      <p><a href="https://www.tiktok.com/@i0superstar" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a></p>
+      <p><a href="https://t.me/l_u_c_k_y0777" target="_blank"> <i class="fab fa-telegram"></i> Telegram </a></p>
+    </div>
+  </div>
+</section>
+
+<button class="scroll-to-top" id="scrollToTopBtn" title="Вгору">↑</button>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2020 - 2025 LatteLand. Усі права захищено.<a href="developer.html" class="developer-link">Розробник</a></p>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>

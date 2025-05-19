@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Про розробницю</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      font-family: 'Quicksand', sans-serif;
+      display: flex;
+      flex-direction: column;
+      background-color: #fffaf7;
+    }
+
+    .navbar {
+      padding: 1rem 2rem;
+      background-color: #fffaf0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #6b4c3b;
+    }
+
+    .back-btn {
+      background-color: #a86b4c;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #8c5235;
+    }
+
+    .resume-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .resume-card {
+      max-width: 800px;
+      width: 100%;
+      background: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .resume-card h1 {
+      font-size: 2rem;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      color: #6b4c3b;
+    }
+
+    .resume-card h2 {
+      font-size: 1.3rem;
+      margin: 20px 0 10px;
+      color: #a86b4c;
+    }
+
+    .resume-card p, .resume-card li {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .resume-card a {
+      color: #a86b4c;
+      text-decoration: none;
+    }
+
+    .resume-card a:hover {
+      text-decoration: underline;
+    }
+
+    .resume-card ul {
+      padding-left: 20px;
+      text-align: left;
+    }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #a86b4c;
+      margin-bottom: 10px;
+    }
+
+    .contacts i {
+      font-size: 1.5rem;
+      margin: 0 10px;
+      color: #a86b4c;
+      transition: color 0.3s;
+    }
+
+    .contacts i:hover {
+      color: #6b4c3b;
+    }
+
+    .footer {
+      background-color: #6b4c3b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: auto;
+    }
+
+    @media (max-width: 600px) {
+      .resume-card {
+        padding: 20px;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .back-btn {
+        align-self: flex-end;
+      }
+
+      .profile-photo {
+        width: 100px;
+        height: 100px;
+      }
+
+      .resume-card h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">LatteLand</div>
+    <a href="index.html" class="back-btn">← Назад</a>
+  </header>
+
+  <main class="resume-container">
+  <div class="resume-card">
+    <!-- Фото профілю -->
+    <img src="images/profile.jpg" alt="Фото профілю" class="profile-photo" />
+    <h1>Про розробницю</h1>
+
+    <p>Привіт, мене звати Олена, я навчаюся у ЧДБК на 3 курсі за спеціальністю "Інженерія програмного забезпечення".</p>
+
+    <h2>Навички</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Figma</li>
+      <li>Git</li>
+    </ul>
+
+    <h2>Досвід</h2>
+<ul>
+  <li>Створення адаптивних вебсторінок</li>
+  <li>Робота з макетами у Figma</li>
+  <li>Верстання сайтів за допомогою HTML та CSS</li>
+  <li>Інтеграція форм з валідацією (JavaScript)</li>
+  <li>Підключення зовнішніх бібліотек (наприклад, Slick Slider, Font Awesome)</li>
+  <li>Робота з Git та GitHub</li>
+  <li>Оптимізація дизайну під мобільні пристрої</li>
+  <li>Організація структури проєкту та робота з файлами</li>
+</ul>
+    <h2>Про проєкт</h2>
+    <p>
+      LatteLand — це мій навчальний вебпроект, створений для демонстрації дизайну та структури сайту кавового бренду. 
+      Він включає головну сторінку, секцію з послугами, галерею, контактну форму та адаптивне меню. 
+      Проєкт акцентує увагу на естетиці, комфорті та затишній атмосфері, яку створює кава.
+    </p>
+
+    <h2>Контакти</h2>
+    <div style="font-size: 1.5rem;">
+      <a href="mailto:cukerochka07@gmail.com" style="margin: 0 10px; color: #a86b4c;"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.instagram.com/lenchuk_07/" target="_blank" style="margin: 0 10px; color: #a86b4c;"><i class="fab fa-instagram"></i></a>
+      <a href="https://t.me/l_u_c_k_y0777" target="_blank" style="margin: 0 10px; color: #a86b4c;"><i class="fab fa-telegram"></i></a>
+    </div>
+  </div>
+</main>
+
+
+  <footer class="footer">
+    <p>© 2025 LatteLand. Створено Оленою Поліщук ☕</p>
+  </footer>
+
+</body>
+</html>
+
+
