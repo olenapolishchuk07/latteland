@@ -82,20 +82,26 @@ else if (nameVal.length < 2) {
 }
   // Перевірка email
   if (emailVal.length === 0) {
-    emailInput.addClass('invalid');
-    emailError.text("Це поле обов'язкове");
-    isValid = false;
-  } else if (!emailVal.includes('@')) {
-    emailInput.addClass('invalid');
-    emailError.text('Email повинен містити символ "@"');
-    isValid = false;
-  } else if (/\.ru$/i.test(emailVal)) {
-    emailInput.addClass('invalid');
-    emailError.text('Email не може містити домен ".ru".');
-    isValid = false;
-  } else {
-    emailInput.addClass('valid');
-  }
+  emailInput.addClass('invalid');
+  emailError.text("Це поле обов'язкове");
+  isValid = false;
+} else if (!emailVal.includes('@')) {
+  emailInput.addClass('invalid');
+  emailError.text('Email повинен містити символ "@"');
+  isValid = false;
+} else if (/\.ru$/i.test(emailVal)) {
+  emailInput.addClass('invalid');
+  emailError.text('Email не може містити домен ".ru".');
+  isValid = false;
+} else if (!/\.[a-z]{2,}$/i.test(emailVal)) {
+  emailInput.addClass('invalid');
+  emailError.text('Email повинен містити правильне доменне розширення (наприклад, .com, .org, .ua).');
+  isValid = false;
+} else {
+  emailInput.removeClass('invalid').addClass('valid');
+  emailError.text('');
+}
+
 
   // Перевірка повідомлення
   if (messageVal.length === 0) {
