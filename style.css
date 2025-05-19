@@ -25,6 +25,7 @@ a {
   align-items: center;
   background: rgba(245, 238, 230, 0.9);
   padding: 20px 50px;
+  padding-top: 20px;
   position: fixed;
   top: 0;
   width: 100%;
