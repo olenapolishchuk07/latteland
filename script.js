@@ -68,6 +68,11 @@ $('#contact-form').submit(function (e) {
   nameInput.addClass('invalid');
   nameError.text("Ім'я повинно містити не більше 20 символів.");
   isValid = false;
+}
+else if (nameVal.length < 2) {
+  nameInput.addClass('invalid');
+  nameError.text("Ім'я повинно містити не менше 2 символів.");
+  isValid = false;
 } else if (!/^[a-zA-Zа-яА-ЯіїєІЇЄґҐ]+$/.test(nameVal)) {
   nameInput.addClass('invalid');
   nameError.text("Ім'я не повинно містити цифри, пробіли чи спецсимволи.");
