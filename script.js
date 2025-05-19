@@ -20,9 +20,9 @@ $(document).ready(function () {
   });
 
   $('#scrollToTopBtn').click(function () {
-    $('html, body').animate({ scrollTop: 0 }, 600);
-    return false;
-  });
+  $(window).scrollTop(0); // миттєвий підйом
+  return false;
+});
 
   $('.gallery-slider').slick({
     autoplay: true,

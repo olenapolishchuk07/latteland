@@ -9,11 +9,12 @@ body {
   line-height: 1.6;
   background-color: #f5eee6;
   color: #3e2e2e;
-  scroll-behavior: smooth;
   min-width: 400px; /* або більше, якщо треба */
   overflow-x: auto;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -307,7 +308,13 @@ button[type="submit"]:hover {
   cursor: pointer;
   display: none;
   z-index: 999;
+  transition: none; /* <-- миттєва зміна кольору */
 }
+
+.scroll-to-top:hover {
+  background-color: #3e2e2e;
+}
+
 
 /* ⚓ Footer */
 .footer {
@@ -443,10 +450,7 @@ textarea.valid {
 html {
   overflow-x: auto;
 }
-#hero,
-#about,
-#services,
-#contact {
+section[id] {
   scroll-margin-top: 80px;
 }
 
