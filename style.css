@@ -442,3 +442,10 @@ textarea.valid {
 html {
   overflow-x: auto;
 }
+#hero,
+#about,
+#services,
+#contact {
+  scroll-margin-top: 80px;
+}
+
